@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ruby /home/jack/programming/date-parser/get-date.rb $1
