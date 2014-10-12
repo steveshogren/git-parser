@@ -8,8 +8,7 @@ task :pusher do
   place = "/home/jack/programming/"
   location = File.join(place, '/**/.git')
   places = Dir.glob(location).select {|f| File.directory? f}
-  times = []
   places.each { |place|
-    puts `git push`
+    puts place + `git push`
   }
 end
