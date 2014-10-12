@@ -3,8 +3,8 @@ require 'date'
 def print_date(y)
   puts "--date=\"" + y.to_datetime.next_day().iso8601 + "\""
 end
-
-location = File.join(ARGV[0], '/**/.git')
+place = ARGV[0] || "/home/jack/programming/"
+location = File.join(place, '/**/.git')
 places = Dir.glob(location).select {|f| File.directory? f}
 times = []
 places.each { |place|
