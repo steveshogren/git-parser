@@ -9,6 +9,6 @@ task :pusher do
   location = File.join(place, '/**/.git')
   places = Dir.glob(location).select {|f| File.directory? f}
   places.each { |place|
-    puts place + `git push`
+    puts place + `git --git-dir=#{place} push`
   }
 end
