@@ -1,3 +1,3 @@
 #!/bin/sh
 
-rake -f /home/jack/programming/date-parser/Rakefile
+rake -f /home/jack/programming/date-parser/Rakefile $1
