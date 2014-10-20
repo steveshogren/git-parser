@@ -4,6 +4,11 @@ task :latest do
   puts `ruby /home/jack/programming/date-parser/get-date.rb`
 end
 
+task :check do
+  `cd /home/jack/programming/dwarffortress`
+  `lein gitcheck`
+end
+
 task :pusher do
   place = "/home/jack/programming/"
   location = File.join(place, '/**/.git')
