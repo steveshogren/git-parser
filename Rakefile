@@ -5,8 +5,7 @@ task :latest do
 end
 
 task :check do
-  `cd /home/jack/programming/dwarffortress`
-  `lein gitcheck`
+  puts `cd /home/jack/programming/dwarffortress/ && lein gitcheck`
 end
 
 task :pusher do
