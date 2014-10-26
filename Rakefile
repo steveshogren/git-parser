@@ -8,6 +8,14 @@ task :check do
   puts `cd /home/jack/programming/dwarffortress/ && lein gitcheck`
 end
 
+task :gui do
+  puts `cd /home/jack/programming/dwarffortress/ && lein gitgui`
+end
+
+task :guifile do
+  `/home/jack/programming/date-parser/guirunner.sh`
+end
+
 task :pusher do
   place = "/home/jack/programming/"
   location = File.join(place, '/**/.git')
