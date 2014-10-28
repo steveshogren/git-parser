@@ -13,7 +13,7 @@ task :gui do
 end
 
 task :guifile do
-  `/home/jack/programming/date-parser/guirunner.sh`
+  `(cd /home/jack/programming/dwarffortress/; lein gitgui > guifile;)&`
 end
 
 task :pusher do
