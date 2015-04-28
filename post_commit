@@ -1,0 +1,10 @@
+#!/bin/sh
+
+## TEMPLATES ARE NOT AUTOMATICALLY PROPIGATED, try gitrake pusher
+
+### lolcommits hook (begin) ###
+export PATH="/usr/bin/ruby:$PATH"
+lolcommits --capture
+###  lolcommits hook (end)  ###
+
+(cd /home/jack/programming/haskell-course/; ./dateParser -b > guifile;)&

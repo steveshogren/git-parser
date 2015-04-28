@@ -25,6 +25,7 @@ task :pusher do
   places.each { |place|
     x = `git --git-dir #{place} log -1 --pretty=format:"%at"`
     last_commit = Time.at(x.to_i)
+    puts `cp ~/.git_template/hooks/post-commit #{place}/hooks/.`
     if two_weeks_ago < last_commit then
       puts place + `git --git-dir=#{place} push`
     else 
